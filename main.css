@@ -55,22 +55,36 @@ blockquote, q {
 body {
   font-family: palatino, 'times new roman', serif;
   text-align:center;
-  min-width:410px;
+}
+
+header {
+  margin: 40px 20px 40px;
+}
+@media (min-width: 600px) {
+  header {
+    margin: 100px 20px 40px;
+  }
 }
 
 h1 {
   font-size: 5em;
-  margin:1.2em 0 1.1em 0;
 }
 
-#profile_links {margin-bottom:5em;}
+#address {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
 
-#profile_links li {display:inline;}
+#initials {
+  display: inline-block;
+}
+
+#profile_links {
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
 #profile_links li {
-  display:inline-block;
-  padding: 0.6em 1.25em 0.5em 1.25em;
-  border-top: 1px solid #EAEAEA;
-  border-bottom: 1px solid #EAEAEA;
+  margin-bottom: 30px;
 }
 
 .main_links {
@@ -80,23 +94,33 @@ h1 {
 .main_links a {
   color: #999;
   text-decoration:none;
-} 
+}
 
 .main_links a:hover, .main_links a:focus {
   color: #000;
   text-decoration:underline;
 }
 
-ul#social_media_links {margin-bottom:5em;}
+ul#social_media_links {
+  margin-bottom:5em;
+}
 
 ul#social_media_links li {
   display: inline;
-  padding:0 1.25em;
+  padding:0 5px;
   text-transform:uppercase;
 }
 
+@media (min-width: 520px) {
+  ul#social_media_links li {
+    padding:0 20px;
+  }
+}
 
-ul#social_media_links a{display:inline;}
+
+ul#social_media_links a{
+  display:inline;
+}
 ul#social_media_links a {
   display:inline-block;
   height: 0;
@@ -104,20 +128,21 @@ ul#social_media_links a {
   width:60px;
   overflow: hidden;
   text-decoration:none;
-  -webkit-border-radius:7px; 
-  -moz-border-radius:7px; 
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
   border-radius:7px;
 }
 
-ul#social_media_links a#linkedin{background:transparent url('images/linkedin_icon.png') no-repeat;}
-ul#social_media_links a#email{background:transparent url('images/email_icon.png') no-repeat;}
-ul#social_media_links a#blog{background:transparent url('images/wordpress_icon.png') no-repeat;}
-ul#social_media_links a#twitter{background:transparent url('images/twitter_icon.png') no-repeat;}
-ul#social_media_links a#github{background:transparent url('images/github_icon.png') no-repeat;}
+ul#social_media_links a { background:transparent no-repeat; }
+ul#social_media_links a#linkedin { background: url('images/linkedin_icon.png'); }
+ul#social_media_links a#email { background: url('images/email_icon.png'); }
+ul#social_media_links a#blog { background: url('images/wordpress_icon.png'); }
+ul#social_media_links a#twitter { background: url('images/twitter_icon.png'); }
+ul#social_media_links a#github { background: url('images/github_icon.png'); }
 
 ul#social_media_links a:hover, ul#social_media_links a:focus {
-  -webkit-box-shadow:0 0 15px #09f; 
-  -moz-box-shadow: 0 0 15px #09f; 
+  -webkit-box-shadow:0 0 15px #09f;
+  -moz-box-shadow: 0 0 15px #09f;
   box-shadow:0 0 15px #09f;
 }
 

@@ -2,6 +2,7 @@
 <html lang="en-GB">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
 
     <title>Duncan G M Stuart</title>
     <meta name="description" content="The business card of Duncan G M Stuart - a Technical Architect, Web Developer and Swing Dancer">
@@ -13,13 +14,15 @@
     <header>
         <h1 itemprop="name">
             <span itemprop="givenName">Duncan</span>
-            <abbr itemprop="additionalName" title="Graeme">G</abbr>
-            <abbr itemprop="additionalName" title="Macdonald">M</abbr>
+            <span id="initials">
+                <abbr itemprop="additionalName" title="Graeme">G</abbr>
+                <abbr itemprop="additionalName" title="Macdonald">M</abbr>
+            </span>
             <span itemprop="familyName">Stuart</span>
         </h1>
     </header>
 
-    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <div id="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
         <span itemprop="addressLocality">London</span>, 
         <span itemprop="addressCountry">UK</span>
     </div>
